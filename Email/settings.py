@@ -121,5 +121,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'annakimsohappy@gmail.com'
+SERVER_EMAIL = 'annakimsohappy@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
 
-EMAIL_HOST = 'localhost'
+# Cổng kết nối bị lỗi có thể đổi thành 587 hoặc 465 hoặc 25 cho phù hợp. Nhiều khi bị nó còn bị block bởi tường lửa hoặc diệt virus
+
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'annakimsohappy@gmail.com'
+EMAIL_HOST_PASSWORD = 'quy!@#456789'
+EMAIL_USE_TLS = True
